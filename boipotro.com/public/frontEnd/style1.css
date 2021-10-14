@@ -1,0 +1,209 @@
+{
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position:relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #ccc;
+}
+
+.tip-up {
+  top: -25px; /* Same as body margin top + border */
+  left: 10px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+.tip-down {
+  bottom: -25px;
+  left: 10px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;  
+}
+
+.tip-left {
+  top: 10px;
+  left: -25px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;  
+}
+
+.tip-right {
+  top: 10px;
+  right: -25px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;  
+}
+
+.dialogbox .body {
+  position: relative;
+  max-width: 300px;
+  height: auto;
+  margin: 20px 10px;
+  padding: 5px;
+  background-color: #DADADA;
+  border-radius: 3px;
+  border: 5px solid #ccc;
+}
+
+.body .message {
+  min-height: 30px;
+  border-radius: 3px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #797979;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/*font Awesome http://fontawesome.io*/
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+/*Comment List styles*/
+.comment-list .row {
+  margin-bottom: 0px;
+}
+.comment-list .panel .panel-heading {
+  padding: 4px 15px;
+  position: absolute;
+  border:none;
+  /*Panel-heading border radius*/
+  border-top-right-radius:0px;
+  top: 1px;
+}
+.comment-list .panel .panel-heading.right {
+  border-right-width: 0px;
+  /*Panel-heading border radius*/
+  border-top-left-radius:0px;
+  right: 16px;
+}
+.comment-list .panel .panel-heading .panel-body {
+  padding-top: 6px;
+}
+.comment-list figcaption {
+  /*For wrapping text in thumbnail*/
+  word-wrap: break-word;
+}
+/* Portrait tablets and medium desktops */
+@media (min-width: 768px) {
+  .comment-list .arrow:after, .comment-list .arrow:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+  }
+  .comment-list .panel.arrow.left:after, .comment-list .panel.arrow.left:before {
+    border-left: 0;
+  }
+  /*****Left Arrow*****/
+  /*Outline effect style*/
+  .comment-list .panel.arrow.left:before {
+    left: 0px;
+    top: 30px;
+    /*Use boarder color of panel*/
+    border-right-color: inherit;
+    border-width: 16px;
+  }
+  /*Background color effect*/
+  .comment-list .panel.arrow.left:after {
+    left: 1px;
+    top: 31px;
+    /*Change for different outline color*/
+    border-right-color: #FFFFFF;
+    border-width: 15px;
+  }
+  /*****Right Arrow*****/
+  /*Outline effect style*/
+  .comment-list .panel.arrow.right:before {
+    right: -16px;
+    top: 30px;
+    /*Use boarder color of panel*/
+    border-left-color: inherit;
+    border-width: 16px;
+  }
+  /*Background color effect*/
+  .comment-list .panel.arrow.right:after {
+    right: -14px;
+    top: 31px;
+    /*Change for different outline color*/
+    border-left-color: #FFFFFF;
+    border-width: 15px;
+  }
+}
+.comment-list .comment-post {
+  margin-top: 6px;
+}
