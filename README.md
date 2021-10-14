@@ -1,6 +1,5 @@
 # Book-selling-website
-It is an online based web application which is created by
-Laravel framework.
+It is an online based web application which is created by Laravel framework. This project is mainly developed based on c2c approach.
 
 Features:
 - This application provide many functionalities like-
